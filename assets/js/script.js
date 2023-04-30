@@ -38,7 +38,7 @@ function displayScheduler() {
 
     //displaying the save button area
     var saveButtonColumn = $("<div>");
-    saveButtonColumn.addClass("col-md-1");
+    saveButtonColumn.addClass("col-md-1 saveColumn");
     saveButtonColumn.attr("id", "save-col-" + i);
     var saveButton = $("<button>");
     saveButton.addClass("saveBtn");
@@ -51,8 +51,6 @@ function displayScheduler() {
 
     row.append(hourColumn, descriptionColumn, saveButtonColumn);
     $(".container").append(row);
-
-
   }
 }
 
