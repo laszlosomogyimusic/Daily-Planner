@@ -8,7 +8,7 @@ This is a simple calendar application that allows a user to save events for each
 Click on the blue save on the right hand side to save the entry locally.
 
 ## Live URL
-TODO
+https://laszlosomogyimusic.github.io/Daily-Planner/
 
 ## Mockup
 ![mockup](./assets/images/mockup.PNG)
