@@ -27,13 +27,19 @@ function displayScheduler() {
     descriptionColumn.attr("id", "description-col-" + i);
     var textArea = $("<textarea>");
     textArea.attr("id", i);
+    if(i < moment().format("HH")) {
+      textArea.addClass("past");
+    } else if (i == moment().format("HH")) {
+      textArea.addClass("present");
+    } else if (i > moment().format("HH")) {
+      textArea.addClass("future");
+    } 
     descriptionColumn.append(textArea);
 
-    //displaying the dave button area
+    //displaying the save button area
     var saveButtonColumn = $("<div>");
     saveButtonColumn.addClass("col-md-1");
     saveButtonColumn.attr("id", "save-col-" + i);
-
     var saveButton = $("<button>");
     saveButton.addClass("saveBtn");
     saveButton.attr("id", "save-btn-" + i);
