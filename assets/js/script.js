@@ -1,5 +1,5 @@
-var startHour = 1;
-var endHour = 17;
+var startHour = 8;
+var endHour = 18;
 var idRow = "row-";
 var idHourCol = "hour-col-";
 var idDescrCol = "descr-col-";
